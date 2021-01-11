@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #fff;
+    padding: 25px 0;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
+    width: 100%;
+    text-align: right;
+    
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    text-decoration: none;
+
+}
+.lista1{
+    display:inline;
+ padding: 0px 10px;
+    
+}
+.lista1:hover{ 
+    display:inline;
+    padding: 0px 10px;
+    color:#944ff3;
+    cursor: pointer;
+
+}
+
+header{
+    width: 100%;
+    height: 740px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: start;
+    justify-content: center;
+}
+.img-header{
+    height:500px ;
+    width: 500px; ;
+
+}
+.div-header{
+    width: 500px;
+    height: 251px;
+}
+h2{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: #8338ec ;
+    margin: 0px 0px 5px;
+}
+.parrafo-header{
+    margin: 16px 0px 40px;
+
+}
+.mis-conocimientos{
+    width: 100%;
+    height: 984px;
+    background-color: #f6f7fb;
+    padding: 110px 40px 130px 40px;
+    
+}
+.h2-conocimientos{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    margin: 37px 0px 17px ;
+}
+
+.parrafo-conocimientos{
+    text-align: center;
+    margin: 16px 0px 56px;
+}
+.div-conocimientos-bloque{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+
+.div-conocimientos{
+    background-color: white;
+    color: #2e2e31;
+    border: 1px solid #dddfe5;
+    border-radius: 8px;
+    width: 260px;
+    margin: 10px;
+    padding: 30px;
+    transition: 0.2s;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+.cita { 
+    width: 100%;
+    height: 568px;
+    background-color:#8338ec ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 40px 130px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+
+
+.boton{
+    background-color: #8338ec;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 100px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 49px;
+     cursor: pointer;
+    transition: 0,4s;
+
+    }
+    .boton:hover{
+        background-color: #944ff3;
+        color: white;
+            padding: 15px 40px;
+        border-radius: 100px;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 49px;
+        cursor: pointer;
+        transition: 0,4s;}
+
+
+    .div-conocimientos{
+        display: block;
+        width: 260px;
+        height: 229px;
+        
+    }
+
+    .img-logo-conocimientos{
+        margin: 24px 0px 20px;
+    }
+    
+   
+    .mis-proyectos{
+        width: 100%;
+        height: 1462px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+      
+
+}
+    
+.div-texto-proyectos{
+    text-align: center;
+
+}
+    .proyectos-container-cards{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+      
+
+    }
+    
+
+    .div-proyectos{
+        height: 319px;
+        width: 311px;
+        margin: 0.75em;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
+
+
+    }
+.section-formulario{
+    background-color: #f6f7fb;
+    width: 100%;
+    height: 1019px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .div-formulario{
+    width: 1028px;
+    height: 689px;
+    display: flex;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 80px 60px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    flex-direction: row;}
+
+    .contactame{
+        width: 453px;
+        height: 527px;
+      
+    }
+
+ .div-redes {
+     display: flex;
+     flex-direction: row;
+     
+ }
+ .icono{
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #fff;
+    color: #8338ec;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-right: 10px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.icono:hover{
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color:#8338ec;
+    color:white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-right: 10px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+}
+
+    footer{
+        width: 100%;
+        height: 303px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px 60px;
+        background-color: #8338ec;
+        color: white;
+    }
