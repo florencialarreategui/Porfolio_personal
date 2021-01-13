@@ -122,8 +122,12 @@ h1{
     text-align: center;
     color: white;
 }
-
-
+.parrafo-cita{
+    font-size: 20px;
+}
+.h3-cita{
+    font-size: 30px;
+}
 
 .boton{
     background-color: #8338ec;
@@ -229,8 +233,10 @@ h1{
     .contactame{
         width: 453px;
         height: 527px;
+       
       
     }
+    
 
  .div-redes {
      display: flex;
@@ -267,7 +273,7 @@ h1{
 }
 
 
-}
+
 
     footer{
         width: 100%;
