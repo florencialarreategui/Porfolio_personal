@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/b6929290b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <ul>
-            <li class="lista1">HOLA</li>
-            <li class="lista1">CONOCIMIENTOS</li>
-            <li class="lista1">PROYECTOS</li>
-            <li class=" lista1 boton">CONTACTO</li>
+           <a href="#hola"> <li class="lista1">HOLA</li></a>
+          <a href="#conocimientos"> <li class="lista1">CONOCIMIENTOS</li></a> 
+          <a href="#proyectos"> <li class="lista1">PROYECTOS</li></a>
+          <a href="#contacto"> <li class=" lista1 boton">CONTACTO</li></a> 
         </ul>
       
 
     </nav>
 
-    <header>
-         <div class="div-header">
+    <header id="hola" >
+         <div  class="div-header">
                     <h2>¡Hola! soy</h2> 
                 <h1>Flor Larreategui</h1> 
                 <p class="parrafo-header">Desarrolladora, docente y artista plástica</p>
@@ -32,8 +33,8 @@
             </div>
     </header>
    
-    <main>
-        <section class="mis-conocimientos">
+    <main >
+        <section id="conocimientos" class="mis-conocimientos">
             <h2 class="h2-conocimientos">Mis Conocimientos</h2>
            <p class="parrafo-conocimientos">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Beatae eaque neque molestias consequuntur vel ab quas architecto.
            
@@ -56,82 +57,91 @@
         </section>
       
              <section class="cita">
+                 <div class="comillas"><i class="fas fa-quote-right"></i></div>
                  
-                    <p class="parrafo-cita">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> illum ut quaerat, quas neque repellat laudantium<br>  quae eveniet recusandae,doloribus, sapiente distinctio dolorum <br>nesciunt molestiae fugiat veritatis optio voluptas aliquam.</p> <br>
-                    <h3 class="h3-cita">Someone</h3>
+                    <p class="parrafo-cita">Lorem ipsum dolor sit amet consectetur adipisicing elit. illum ut quaerat, quas <br>neque repellat laudantium  quae eveniet recusandae,doloribus, sapiente distinctio dolorum <br>nesciunt molestiae fugiat veritatis optio voluptas aliquam.</p> <br>
+                    <h3 class="h3-cita"> <strong>Someone</strong> </h3>
                 
              </section>
        
-        <section class="mis-proyectos">
+        <section id="proyectos" class="mis-proyectos">
             <div class="div-texto-proyectos"><h3 class="h2-conocimientos">Mis Proyectos</h3> <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, expedita nam. <br>Minus, earum, eligendi aspernatur cumque exercitationem <br>aut alias commodi temporibus illum necessitatibus beatae expedita <br>voluptates aliquid! Sunt, odit? A?</p>
             </div>
         
             <div class="proyectos-container-cards">
                     <div class="proyectos-bloque1">
-                        <div class="div-proyectos"><img src="https://frontend-proyecto-portfolio.adaitw.org/images/Screen%20Shot%202020-07-12%20at%2014.31.06.png" alt="" width="276px" height="218px"> <br><h3>Porfolio</h3></div>
-                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_wallet_aym5.png" alt="" width="277px" height="180"><h3>Controlador de gastos</h3></div>
-                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_movie_night_fldd.png" alt="" width="277px" height="165px"><h3>Buscador de películas</h3></div>
+                       <a href="header"> <div class="div-proyectos"><img src="https://frontend-proyecto-portfolio.adaitw.org/images/Screen%20Shot%202020-07-12%20at%2014.31.06.png" alt="" width="276px" height="218px"> <br><h3 class="nombre-proyectos">Porfolio</h3></div></a>
+                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_wallet_aym5.png" alt="" width="277px" height="180"><h3 class="nombre-proyectos">Controlador de gastos</h3></div>
+                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_movie_night_fldd.png" alt="" width="277px" height="165px"><h3 class="nombre-proyectos">Buscador de películas</h3></div>
                     </div>
                     <div class="proyectos-bloque2">
-                        <div class="div-proyectos"><img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_mobile_user_7oqo.png" alt="" width="276px" height="169px" > <h3>Generador de memes</h3></div>
-                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_calendar_dutt.png" width="277px" height="210px"><h3>Administrador de reuniones</h3></div>
+                        <div class="div-proyectos"><img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_mobile_user_7oqo.png" alt="" width="276px" height="169px" > <h3 class="nombre-proyectos">Generador de memes</h3></div>
+                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_calendar_dutt.png" width="277px" height="210px"><h3 class="nombre-proyectos">Administrador de reuniones</h3></div>
                        
                     </div>
                     <div class="proyectos-bloque3">
-                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_old_day_6x25.png" alt="" height="204px" width="277px"><h3>March 3</h3></div>
-                        <div class="div-proyectos"><img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_to_do_list_a49b.png" alt="" width="277px" height="190px"><h3>Todo app</h3></div>
+                        <div class="div-proyectos"> <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_old_day_6x25.png" alt="" height="204px" width="277px"><h3 class="nombre-proyectos">March 3</h3></div>
+                        <div class="div-proyectos"><img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_to_do_list_a49b.png" alt="" width="277px" height="190px"><h3 class="nombre-proyectos">Todo app</h3></div>
                         
                     </div>
                 </div>
                 </section>
-        <section class="section-formulario">
+        <section id="contacto" class="section-formulario">
                 <div class="div-formulario">
 
                     <div class="contactame">
                              <div class="div-texto-contactame">
-                                        <h2>Contactame</h2>
+                                        <h2 class="formulario-h2">Contactame</h2>
                                         <p class="parrafo-contactame">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum dicta consequatur, labore animi error ducimus laboriosam aperiam illo inventore, voluptas, voluptatibus vero fugiat cum sed veniam id cupiditate omnis! Quas.</p>
                              </div>
                             
                          <div class="redes-formulario">
-                                 <div class="div-redes" >
-                                         <div class="icono"> <img src="imagenes/icono-twitter.svg" height="20px" width="20px" alt="">  </div> 
+                            <a href="https://twitter.com/JuannaDeArco"> <div class="div-redes" >
+                                         <div class="icono"> <i class="fab fa-twitter"height="20px" width="20px" alt=""> </i> </div> 
                                 
-                                          <div>@AdaLovelace</div>               
-                                </div>    
+                                          <div class="datos-contacto-redes">@JuanaDeArco</div>               
+                                </div> </a>   
 
-                                 <div class="div-redes">
-                                             <div class="icono"><img src="imagenes/icono-discord.svg" height="20px" width="20px" alt=""> </div>           
-                                            <div>AdaLovelace</div>            
-                                 </div>     
+                                <a href="https://discord.com/channels/741064053497135165/741064054344515586">  <div class="div-redes">
+                                             <div class="icono"><i class="fab fa-discord" height="20px" width="20px" alt=""></i> </div>           
+                                            <div class="datos-contacto-redes">florencialarreategui</div>            
+                                 </div>  </a>   
                                  
+                                 <a href="https://www.linkedin.com/in/florencia-larreategui-b9591a16b/">
                                  <div class="div-redes" >
-                                    <div class="icono"><img src="imagenes/icono-linkedin.svg" height="20px" width="20px" alt=""></div> 
-                                     <div>adalovelace</div>               
-                                 </div>    
+                                   <div class="icono"><i class="fab fa-linkedin-in"height="20px" width="20px" alt=""></i></div> </a>
+                                     <div class="datos-contacto-redes">Florencia Larreategui</div>               
+                                 </div>    </a> 
 
-                                 <div class="div-redes">
-                                        <div class="icono"><img src="imagenes/icono-mail.svg" height="20px" width="20px" alt=""> </div>           
-                                       <div>Aada.lovelace@gmail.com</div>            
+                               <div class="div-redes">
+                                        <div class="icono"><i class="fas fa-envelope"height="20px" width="20px" alt=""></i> </div>           
+                                       <div class="datos-contacto-redes">florencialarreategui@gmail.com</div>            
                                  </div>                                   
                        </div>
                                 
                     </div>
                    
                     <div class="escribime">
-                            <h2>Escribime</h2>
+                            <h2 class="formulario-h2">Escribime</h2>
                            <form>
-                               <label for="idNombre"> <strong>Nombre</strong> </label>
-                               <input id="idNombre"  name="nombre" type="text" placeholder="Ej Alicia">
+                               <div class="nombre-apellido-form">
+                                   <div class="nombre-form">
+                                        <label for="idNombre"> <strong>Nombre <sup>*</sup></strong> </label>
+                                        <input id="idNombre"  name="nombre" type="text" placeholder="Ej Alicia">
+                                    </div>
+                                     <div>
+                                        <label for="idApellido"> <strong>Apellido <sup>*</sup></strong> </label>
+                                         <input id="idApellido"  name="Apellido" type="text" placeholder="Ej Fernandez">
 
-                               <label for="idApellido"> <strong>Apellido</strong> </label>
-                               <input id="idApellido"  name="Apellido" type="text" placeholder="Ej Fernandez">
+                                     </div>
+
+                            </div>
                                     <br>
-                               <label for="idMail"> <strong>E-mail</strong> </label>
+                               <label for="idMail"> <strong>E-mail <sup>*</sup></strong> </label>
                                <input id="idMail"  name="email" type="text" placeholder="Ej aliciafernandez@gmail.com">
                                 <br>
-                               <label for="idMensaje"> <strong>Mensaje</strong> </label>
+                               <label for="idMensaje"> <strong>Mensaje <sup>*</sup></strong> </label>
                                <input id="idMensaje"  name="mensaje" type="text" placeholder="Escribe aqui  tu mensaje">
                            </form>
 
@@ -145,18 +155,18 @@
     </main>
     <footer>
         <ul>
-        <li class="lista1">HOLA</li>
-            <li class="lista1">CONOCIMIENTOS</li>
-            <li class="lista1">PROYECTOS</li>
-            <li class= lista1>CONTACTO</li>
+            <a href="#hola">  <li class="lista1">HOLA</li> </a>
+            <a href="#conocimientos">  <li class="lista1">CONOCIMIENTOS</li> </a>
+            <a href="#proyectos">  <li class="lista1">PROYECTOS</li> </a>
+            <a href="#contacto"></a><li class= lista1>CONTACTO</li> </a>
         </ul>
         <div class="redes-footer">
-            <div class="icono-footer"></div>
-            <div class="icono-footer"></div>
-            <div class="icono-footer"></div>
-            <div class="icono-footer"></div>
+           <a href="https://twitter.com/JuannaDeArco"> <div class="icono-footer"><i class="fab fa-twitter"height="20px" width="20px" alt=""> </i> </div></a>
+            <a href="https://discord.com/channels/741064053497135165/741064054344515586"><div class="icono-footer"><i class="fab fa-discord" height="20px" width="20px" alt=""></i></div></a>
+            <a href="https://www.linkedin.com/in/florencia-larreategui-b9591a16b/"><div class="icono-footer"><i class="fab fa-linkedin-in"height="20px" width="20px" alt=""></i></div></a>
+            <a href="mailto:florencialarreategui@gmail.com"><div class="icono-footer"><i class="fas fa-envelope"height="20px" width="20px" alt=""></i></div> </a>
         </div>
-<P>Hecho con  por Flor</P>
+<P>Hecho con <i class="fas fa-heart"></i> por Flor</P>
 
 
     </footer>

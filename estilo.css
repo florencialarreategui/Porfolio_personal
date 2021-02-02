@@ -4,6 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+    box-shadow: #2e2e31  inset;
+}
+a{
+    text-decoration:none;
+}
 nav{
     background-color: #fff;
     padding: 25px 0;
@@ -32,8 +39,8 @@ nav{
     padding: 0px 10px;
     color:#944ff3;
     cursor: pointer;
-
 }
+
 
 header{
     width: 100%;
@@ -119,8 +126,12 @@ h1{
     align-items: center;
     padding: 110px 40px 130px;
     flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     color: white;
+}
+.comillas{
+    font-size: 80px;
 }
 .parrafo-cita{
     font-size: 20px;
@@ -175,10 +186,9 @@ h1{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        }
         
-      
-
-}
+        
     
 .div-texto-proyectos{
     text-align: center;
@@ -199,6 +209,7 @@ h1{
         margin: 0.75em;
         border: 1px solid #e0e0e0;
         border-radius: 8px;
+        color: #2e2e31;
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -206,11 +217,36 @@ h1{
         text-align: center;
         flex-direction: column;
         justify-content: space-between;
-        
-        
+        transition: 0.2s;
+        cursor: pointer;
+        }
 
-
+        .div-proyectos:hover{
+            height: 319px;
+            width: 311px;
+            margin: 0.75em;
+            border: 1px solid  #8338ec;
+            border-radius: 8px;
+            color: #8338ec;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.2s;
+            cursor: pointer;
+            }
+/*
+    .nombre-proyectos{
+        color: black;
     }
+    .nombre-proyectos:hover{
+        color: #8338ec;
+    }
+    */
+
 .section-formulario{
     background-color: #f6f7fb;
     width: 100%;
@@ -219,8 +255,9 @@ h1{
     justify-content: center;
     align-items: center;
     }
+
     .div-formulario{
-    width: 1028px;
+    width: 1300px;
     height: 689px;
     display: flex;
     text-align: left;
@@ -230,19 +267,56 @@ h1{
     border: 1px solid #e0e0e0;
     flex-direction: row;}
 
+    #idMensaje{
+        height: 172px;
+        width: 433px;
+    }
+
     .contactame{
-        width: 453px;
+        width: 50%;
         height: 527px;
-       
+        padding-right: 70px;
       
     }
-    
+
+    .div-texto-contactame{
+        padding-bottom: 50px;
+    }
+   .formulario-h2{
+        padding-bottom: 30px;
+        font-size: 3rem;
+    }
+
 
  .div-redes {
      display: flex;
      flex-direction: row;
-     
+     box-shadow: #8338ec;
+    box-shadow: 2px;
+    display: flex;
+    color: #2e2e31;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition: 0.2s;
+    cursor: pointer;
+  
  }
+ .div-redes:hover {
+    display: flex;
+    flex-direction: row;
+    box-shadow: #8338ec;
+    box-shadow: 2px;
+    display: flex;
+    color:#8338ec ;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;   
+    transition: 0.2s;
+    cursor: pointer;   
+}
+
+
  .icono{
     display: block;
     width: 2.2rem;
@@ -250,7 +324,7 @@ h1{
     background-color: #fff;
     color: #8338ec;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2.2rem;
     margin-right: 10px;
     text-align: center;
@@ -264,15 +338,50 @@ h1{
     background-color:#8338ec;
     color:white;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 2.2rem;
     margin-right: 10px;
     text-align: center;
     transition: 0.2s;
     cursor: pointer;
 }
-
-
+.datos-contacto-redes{
+    margin-top: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.datos-contacto-redes:hover{
+    margin-top: 9px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.escribime{
+    width: 50%;
+    height: 527px;
+}
+label{
+    font-size: 1.2rem;
+}
+input[type=text] {
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    font-size: var(--text-sm);
+    padding: 10px 15px;
+    display: flex;
+    width: 207px;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.2s;
+    justify-content: space-between;
+}
+.nombre-apellido-form{
+    display: flex;
+    align-items: row;
+    width: 433px;
+    height: 89px;
+    justify-content: space-between;
+    }
 
 
     footer{
@@ -286,3 +395,46 @@ h1{
         background-color: #8338ec;
         color: white;
     }
+    
+ 
+.redes-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-items: center;
+    height: 90px;;
+    width: 250px;
+    font-size: 25px;
+}
+.icono-footer{
+    height: 44px;
+    width: 44px;
+    border: white solid 1 px;
+    border-radius: 150px;
+    background-color:white;
+    color: #8338ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.icono-footer:hover{
+    height: 44px;
+    width: 44px;
+    border:white solid 1px;
+    border-radius: 150px;
+    background-color:#8338ec;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.fa-heart{
+    color: red;
+}
+
+
+@media screen (max-with: 768px)
