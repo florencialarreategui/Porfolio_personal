@@ -44,17 +44,20 @@ nav{
 
 header{
     width: 100%;
-    height: 740px;
-    display: flex;
+     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     text-align: start;
     justify-content: center;
+    padding-top: 9%;
+}
+.div-img-header{
+    width: 50%;
 }
 .img-header{
     height:500px ;
-    width: 500px; ;
+    width: 100%; ;
 
 }
 .div-header{
@@ -79,8 +82,7 @@ h1{
 }
 .mis-conocimientos{
     width: 100%;
-    height: 984px;
-    background-color: #f6f7fb;
+ background-color: #f6f7fb;
     padding: 110px 40px 130px 40px;
     
 }
@@ -386,7 +388,7 @@ input[type=text] {
 
     footer{
         width: 100%;
-        height: 303px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -437,4 +439,31 @@ input[type=text] {
 }
 
 
-@media screen (max-with: 768px)
+@media screen (max - with: 375px){
+    nav{ display: none
+    
+    }
+    header{
+        width: 100%;
+        padding-top: 2%;
+        padding-left:2%
+    }
+    .div-img-header{
+        width: 100%;
+}
+
+
+    .img-header{
+        width: 100%; ;
+ }
+    .div-header{
+        width: 100%;
+        
+    }
+
+    .div-conocimientos-bloque{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+}
