@@ -133,21 +133,24 @@
                                <div class="nombre-apellido-form">
                                    <div class="nombre-form">
                                         <label for="idNombre"> <strong>Nombre <sup>*</sup></strong> </label>
-                                        <input id="idNombre"  name="nombre" type="text" placeholder="Ej Alicia">
+                                        <input id="idNombre"  name="nombre" type="text" class="form__input"  placeholder="Ej Alicia" required>
                                     </div>
                                      <div>
                                         <label for="idApellido"> <strong>Apellido <sup>*</sup></strong> </label>
-                                         <input id="idApellido"  name="Apellido" type="text" placeholder="Ej Fernandez">
+                                         <input id="idApellido"  name="Apellido" type="text"  class="form__input"  placeholder="Ej Fernandez" required>
 
                                      </div>
 
                             </div>
                                     <br>
                                <label for="idMail"> <strong>E-mail <sup>*</sup></strong> </label>
-                               <input id="idMail"  name="email" type="text" placeholder="Ej aliciafernandez@gmail.com">
+                               <div class="form-control">
+                                <input id="idMail"  name="email" type="email" class="form__input" placeholder="Ej aliciafernandez@gmail.com" required>
+                                <img src="./images/icon-error.svg" class="icon-invalid" alt="">  </div>
                                 <br>
                                <label for="idMensaje"> <strong>Mensaje <sup>*</sup></strong> </label>
-                               <input id="idMensaje"  name="mensaje" type="text" placeholder="Escribe aqui  tu mensaje">
+                               <input id="idMensaje"  name="mensaje" type="text" class="form__input" placeholder="Escribe aqui  tu mensaje" required>
+                               <div class="boton_enviar boton"><h5>Enviar</h5></div>
                            </form>
 
                             </div>
