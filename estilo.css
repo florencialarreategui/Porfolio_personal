@@ -306,7 +306,8 @@ h2{
 .section-formulario{
     background-color: #f6f7fb;
     width: 100%;
-    height: 1019px;
+    height: auto;
+   padding: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +326,7 @@ h2{
 
     .contactame{
         width: 50%;
-        height: 527px;
+        height: auto;
         padding-right: 70px;
       
     }
@@ -335,7 +336,7 @@ h2{
     }
    .formulario-h2{
         padding-bottom: 30px;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
 
@@ -408,7 +409,7 @@ h2{
 }
 .escribime{
     width: 50%;
-    height: 527px;
+    height: auto;
 }
 label{
     font-size: 1.2rem;
@@ -631,13 +632,15 @@ input[type=text] {
         }
             
     }
-
+.section-formulario{
+    display: flex;
+    flex-direction: column;
+}
     
     .div-formulario{
-        width: 80%;
+        width: 100%;
         height: auto;
         display: flex;
-        flex-direction: row;
         text-align: left;
         background-color: #ffffff;
         padding: 80px 60px;
@@ -647,10 +650,10 @@ input[type=text] {
 
 
     .contactame{
-        width: 70%;
+        width: 100%;
     }
     .escribime{
-        width: 70%;
+        width: 100%;
     
     }
     footer{
