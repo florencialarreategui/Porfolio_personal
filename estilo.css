@@ -6,9 +6,24 @@
 }
 
  body{
+     /* No tiene sentido darle position relative al body */
         position: relative;
+        /* esta sombra no esta bien escrita, por lo que no se ve en tu pagina */
         box-shadow: #2e2e31  inset;
     }
+
+/* Aca tenes una muestra de todos los problemas con la prolijidad de tu css. 
+Falta espacio entre la a y la llave, el tabulado esta incorrecto y hay 
+muchisimos saltos de linea entre esta orden y la siguiente. 
+Deberia ser
+
+a {
+    text-decoration:none;
+}
+
+header {   
+    ...;
+} */
 
 a{
     text-decoration:none;
@@ -20,6 +35,7 @@ a{
         /*header*/
 
  header{
+     /* innecesario: es el color por defecto */
     background-color: #fff;
     padding: 25px 0;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
@@ -31,19 +47,23 @@ a{
     }
 
 
+/* no existe la clase "ul" en tu codigo. Esta es una etiqueta. Ninguna de estas ordenes se esta aplicando.  */
 .ul{
     display: flex;
+    /* innecesario, row es el estilo por defecto */
     flex-direction: row;
     text-align: right;
     text-decoration: none;
 
 }
 .lista1{
+    /* incorrecto. los li ya son elementos en linea, no tenes que decirlo  */
     display:inline;
     padding: 0px 10px;
     
 }
 .lista1:hover{ 
+    /* no es necesario repetir esto en el hover */
     display:inline;
     padding: 0px 10px;
     color:#944ff3;
@@ -60,21 +80,25 @@ a{
     box-shadow:0 0 8px #944ff3;
     text-decoration: none;}
 
+/* ojo con el tabylado aca, no tiene sentido agregar espacio */
     .boton{
         background-color: #8338ec;
         color: white;
         padding: 15px 40px;
         border-radius: 100px;
         font-weight: 500;
+        /* estas ordenes no se aplican, solo se aplican si el elemento tiene ademas display flex */
         justify-content: center;
         align-items: center;
         width: 200px;
         height: 49px;
          cursor: pointer;
+         /* 0.4s, con punto y no con coma */
         transition: 0,4s;
     
         }
      .boton:hover{
+         /* no es necesario repetir en el hover todas las ordenes, sino solo aquellas que cambian */
             background-color: #944ff3;
             color: white;
                 padding: 15px 40px;
@@ -85,6 +109,7 @@ a{
             width: 200px;
             height: 49px;
             cursor: pointer;
+            /* la transicion nunca va en el hover */
             transition: 0,4s;
         }
 
@@ -95,8 +120,11 @@ a{
             /* Hola/section 1*/
     
 #hola{
+    /* no es necesario poner width 100, ese es el estilo por defecto. 
+    la excepcion es cuando tiene position sticky o fixed */
     width: 100%;
      display: flex;
+     /* row es la direccion por defecto, no es necesario agregarla */
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -106,6 +134,7 @@ a{
 }
 
 .div-section-hola{
+
     width: 500px;
     height: 251px;
 }
@@ -138,6 +167,7 @@ h2{
     height: auto;
 }
 .img-hola{
+    /* ojo, aca hay dos ; seguidos */
     height: 500px; ;
     width: 100%; ;
 
@@ -150,8 +180,11 @@ h2{
 
 
 .mis-conocimientos{
+    /* innecesario */
     width: 100%;
     background-color: #f6f7fb;
+    /* este padding es enorme, no hay problema aca pero ojo cuando hagas las media queries, 
+    vas a tener que achicarlo */
     padding: 110px 40px 130px 40px;
     
 }
@@ -168,6 +201,7 @@ h2{
 }
 .div-conocimientos-bloque{
     display: flex;
+    /* innecesario */
     flex-direction: row;
     justify-content: center;  
 }
@@ -196,14 +230,17 @@ h2{
 
 
 .cita { 
+    /* innecesario */
     width: 100%;
     height: 568px;
     background-color:#8338ec ;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* ojo con este padding en la media query */
     padding: 110px 40px 130px;
     flex-direction: column;
+    /* ya dijiste justify content mas arriba, esta orden la contradice! */
     justify-content: space-between;
     text-align: center;
     color: white;
@@ -222,6 +259,7 @@ h2{
 
 /*Conocimientos*/
     .div-conocimientos{
+        /* innecesario, ya tiene display block por defecto */
         display: block;
         width: 260px;
         height: 229px;
@@ -237,7 +275,10 @@ h2{
     /*Proyectos*/
    
     .mis-proyectos{
+        /* innecesario */
         width: 100%;
+        /* deja que el alto de una seccion este dada por su contenido. si agregaras mas tarjetas, 
+        rebalsarian este div */
         height: 1462px;
         display: flex;
         justify-content: center;
@@ -252,6 +293,7 @@ h2{
 }
     .proyectos-container-cards{
         display: flex;
+        /* innecesario */
         flex-direction:row;
         justify-content: center;
       
@@ -272,12 +314,15 @@ h2{
         align-items: center;
         text-align: center;
         flex-direction: column;
+        /* de nuevo, tenes un justify content mas arriba, estas contradiciendote aca  */
         justify-content: space-between;
         transition: 0.2s;
         cursor: pointer;
         }
 
         .div-proyectos:hover{
+            /* no es necesario repetir todo el estilo del elemento en el hover
+            solo tenes que indicar lo que cambia */
             height: 319px;
             width: 311px;
             margin: 0.75em;
@@ -290,10 +335,13 @@ h2{
             align-items: center;
             text-align: center;
             flex-direction: column;
+             /* de nuevo, tenes un justify content mas arriba, estas contradiciendote aca  */
             justify-content: space-between;
             transition: 0.2s;
             cursor: pointer;
             }
+
+            /* no dejes codigo comentado en una entrega */
 /*
     .nombre-proyectos{
         color: black;
@@ -305,7 +353,9 @@ h2{
 /* Formulario*/
 .section-formulario{
     background-color: #f6f7fb;
+    /* innecesario */
     width: 100%;
+    /* innecesario */
     height: auto;
    padding: 5%;
     display: flex;
@@ -322,6 +372,7 @@ h2{
     padding: 80px 60px;
     border-radius: 15px;
     border: 1px solid #e0e0e0;
+    /* innecesario */
     flex-direction: row;}
 
     .contactame{
@@ -342,6 +393,7 @@ h2{
 
  .div-redes {
      display: flex;
+     /* innecesario */
      flex-direction: row;
      box-shadow: #8338ec;
     box-shadow: 2px;
@@ -355,6 +407,7 @@ h2{
   
  }
  .div-redes:hover {
+     /* innecesario repetir en el hover*/
     display: flex;
     flex-direction: row;
     box-shadow: #8338ec;
@@ -384,6 +437,7 @@ h2{
     cursor: pointer;
 }
 .icono:hover{
+    /* innecesario repetir todo en el hover*/
     display: block;
     width: 2.2rem;
     height: 2.2rem;
@@ -403,6 +457,7 @@ h2{
     cursor: pointer;
 }
 .datos-contacto-redes:hover{
+    /* innecesario repetir en el hover lo que no cambia*/
     margin-top: 9px;
     transition: 0.2s;
     cursor: pointer;
@@ -418,17 +473,22 @@ input[type=text] {
     border-radius: 20px;
     background-color: #f6f7fb;
     border: 1px solid #f6f7fb;
+    /* ??? no usas variables de css en tu codigo, ni siquiera las vimos. 
+    que hace esto aca? -*/
     font-size: var(--text-sm);
     padding: 10px 15px;
     display: flex;
+    /* innecesario */
     width: 100%;
+    /* nunca, nunca saques el outline de tus elementos de formulario a menos
+    que tengas una alternativa */
     outline: none;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     transition: 0.2s;
     justify-content: space-between;
     margin-top: 6px;
 }
-
+/* mismas observaciones que mas arriba */
     input[type=email] {
         border-radius: 20px;
         background-color: #f6f7fb;
@@ -446,6 +506,7 @@ input[type=text] {
 
     .nombre-apellido-form{
         display: flex;
+        /* esta orden no significa nada para css */
         align-items: row;
         width: 100%;
         justify-content: space-between;
@@ -521,6 +582,7 @@ input[type=text] {
  /*footer*/
 
     footer{
+        /* innecesario */
         width: 100%;
 
         display: flex;
@@ -531,6 +593,7 @@ input[type=text] {
         background-color: #8338ec;
         color: white;
     }
+    /* atencion al tabulado, aca esta ilegible */
             .lista2{
             display:inline;
         padding: 0px 10px;
@@ -538,6 +601,7 @@ input[type=text] {
             }
 
             .lista2:focus{
+                /* no es necesario repetir en el focus */
                 display:inline;
             padding: 0px 10px;
             color: white;
@@ -547,9 +611,11 @@ input[type=text] {
  
     .redes-footer{
         display: flex;
+        /* innecesario */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        /* ojo con el doble ; */
         height: 90px;;
         width: 250px;
         font-size: 25px;
@@ -557,6 +623,7 @@ input[type=text] {
     .icono-footer{
         height: 44px;
         width: 44px;
+        /* el px debe estar pegado al 1 */
         border: white solid 1 px;
         border-radius: 150px;
         background-color:white;
@@ -568,6 +635,7 @@ input[type=text] {
         cursor: pointer;
     }
     .icono-footer:hover{
+        /* innecesaria la repeticion en el hover */
         height: 44px;
         width: 44px;
         border:white solid 1px;
@@ -633,6 +701,7 @@ input[type=text] {
             
     }
 .section-formulario{
+    /* esto deberia estar en div-formulario */
     display: flex;
     flex-direction: column;
 }
@@ -659,6 +728,7 @@ input[type=text] {
     footer{
         height: auto;
         width: 100%;
+        /* esta orden no significa nada */
         flex-direction: block;
     }
     
